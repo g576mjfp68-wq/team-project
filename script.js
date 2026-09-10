@@ -38,3 +38,17 @@ showMottoButton.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * mottos.length);
   mottoText.textContent = mottos[randomIndex];
 });
+
+const clockValue = document.getElementById("clock-value");
+
+function updateClock() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, "0");
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const seconds = String(now.getSeconds()).padStart(2, "0");
+
+  clockValue.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+updateClock();
+setInterval(updateClock, 1000);
