@@ -20,7 +20,11 @@
       <section class="message-section" aria-label="Atsitiktinė žinutė">
         <h2>Atsitiktinė žinutė</h2>
         <p id="message-text" class="message-text">Git yra mūsų komandos supergalia.</p>
-        <button type="button" id="generate-message-button">Generuoti žinutę</button>
+        <div class="message-actions">
+          <button type="button" id="generate-message-button">Generuoti žinutę</button>
+          <button type="button" id="show-motto-button">Parodyti komandos šūkį</button>
+        </div>
+        <p id="motto-text" class="motto-text" aria-live="polite"></p>
       </section>
 
       <section class="team" aria-label="Komandos nariai">
