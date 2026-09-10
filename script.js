@@ -24,3 +24,17 @@ generateMessageButton.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * messages.length);
   messageText.textContent = messages[randomIndex];
 });
+
+const showMottoButton = document.getElementById("show-motto-button");
+const mottoText = document.getElementById("motto-text");
+
+const mottos = [
+  "Kuriame kartu, augame kartu.",
+  "Maži commit'ai, dideli rezultatai.",
+  "Idėjos tampa geresnės dirbant drauge."
+];
+
+showMottoButton.addEventListener("click", () => {
+  const randomIndex = Math.floor(Math.random() * mottos.length);
+  mottoText.textContent = mottos[randomIndex];
+});
