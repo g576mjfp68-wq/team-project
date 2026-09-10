@@ -22,6 +22,7 @@ body {
 }
 
 .page {
+  width: min(100%, 900px);
   text-align: center;
   padding: 2rem 1.5rem;
 }
@@ -51,6 +52,36 @@ h1 {
 
 .counter-section h2 {
   margin: 0 0 0.75rem;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.member-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(31, 41, 51, 0.06);
+}
+
+.member-avatar {
+  display: grid;
+  flex: 0 0 3.25rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #dcefe8;
+  color: #28745d;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -70,4 +101,30 @@ h1 {
   color: var(--text-color);
   font: inherit;
   cursor: pointer;
+}
+
+.member-card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.member-role {
+  margin: 0.3rem 0 0;
+  color: #28745d;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.member-description {
+  margin: 0.65rem 0 0;
+  color: var(--muted-color);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 640px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
 }
