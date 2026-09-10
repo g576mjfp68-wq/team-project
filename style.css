@@ -54,6 +54,36 @@ h1 {
   margin: 0 0 0.75rem;
 }
 
+.message-section {
+  margin-top: 2rem;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.message-section h2 {
+  margin: 0 0 0.75rem;
+}
+
+.message-text {
+  margin: 0 0 1rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#generate-message-button {
+  padding: 0.6rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f0fdf4;
+  color: var(--text-color);
+  font: inherit;
+  cursor: pointer;
+}
+
 .team {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
